@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1caf81c772.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fontawesome.com/icons/trash?f=classic&s=solid">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDoList</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Yapılacaklar</h2>
+                <i class="far fa-square"></i>
+            </div>
+                <div class="card-body">
+                    <ul class="todo-list">
+                        <div class="todo-item done">
+                        <li>evi topla</li>
+                        <i class="fas fa-square"></i>
+                        <i class="fa-solid fa-trash"></i>
+                        </div>   
+                    </ul>
+                </div>
+            <div class="card-footer">
+                <input type="text" id="todo-input" placeholder="ekle">
+                <button id="todo-button"><i class="fas fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

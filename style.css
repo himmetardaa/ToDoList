@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(#ff4f81,#f0f);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card{
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    margin: 50px,0px;
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .3);
+    color: #fff;
+    border-radius: 5px ;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    padding: 10px,0px;
+    border-bottom: 3px solid;
+}
+
+.card-header i{
+    margin-left: auto;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    padding: 10px ,0px;
+    height: 600px;
+    overflow-x: scroll;
+}          
+
+.todo-list{
+    list-style: none;
+}
+
+.todo-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .1);
+    gap: 10px;
+}
+
+.todo-item li{
+    flex-grow: 1;
+    font-size: 14px;
+    cursor: default;
+}
+
+.todo-item i{
+    font-size: 17px;
+    margin: 0px,5px;
+    cursor: pointer;
+}
+
+.card-footer{
+    padding: 10px 0px;
+    display: flex;
+}
+
+.card-footer input{
+    width: 100%;
+    font-size: 15px;
+    line-height: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.card-footer input:focus, .card-footer button:focus{
+    outline: 0;
+}
+
+.card-footer button{
+    background-color: ghostwhite;
+    color: black;
+    font-size: 18px;
+    border: 0;
+    width: 60px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.card-footer button:hover{
+    background-color: rgb(252, 207, 207);
+}
+
+.todo{
+    display: flex;
+}
+
+.done{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+
+
+
+
+
+
+
+
