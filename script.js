@@ -35,7 +35,7 @@ const saveTodosToStorage = (todo) => {
 }
 
 todoButton.addEventListener('click',() =>{
-    const input = todoInput.value;
+    const input = todoInput.value.trim();
     if(input) saveTodosToStorage(input);
     todoInput.value = ""; 
 })
@@ -123,7 +123,7 @@ const removeDone = (target) => {
 
 const createTodoItem = (text) => {
     const todoItem = document.createElement('div');
-    todoItem.classList.add('todo-ıtem','todo');
+    todoItem.classList.add('todo-item','todo');
     const todoItemLi = document.createElement('li');
     todoItemLi.innerHTML = text;
     const todoItemCheck = document.createElement('i');
@@ -140,7 +140,7 @@ const createTodoItem = (text) => {
 
 const createDoneItem = (text) => {
     const todoItem = document.createElement('div');
-    todoItem.classList.add('todo-ıtem','done');
+    todoItem.classList.add('todo-item','done');
     const todoItemLi = document.createElement('li');
     todoItemLi.innerHTML = text;
     const todoItemCheck = document.createElement('i');
